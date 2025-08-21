@@ -17,7 +17,7 @@ export default function HeroSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 3000); // 3 sec auto change
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -41,26 +41,27 @@ export default function HeroSection() {
             <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70 backdrop-blur">
               <span className="h-2 w-2 rounded-full bg-emerald-400" />
               <span className="uppercase tracking-wider">New</span>
-              <span className="text-white/50">Clean & Modern UI</span>
+              <span className="text-white/50">Exclusive Collection</span>
             </div>
 
             <h1 className="text-4xl font-extrabold leading-tight text-white md:text-5xl lg:text-6xl">
-              Build beautiful experiences
+              Discover the latest
               <span className="block bg-gradient-to-r from-violet-400 via-fuchsia-400 to-pink-400 bg-clip-text text-transparent">
-                for your next project
+                gadgets & accessories
               </span>
             </h1>
             <p className="max-w-xl text-base leading-relaxed text-white/70 md:text-lg">
-              A minimal, premium banner with crisp typography, soft shadows, and
-              accessible contrast. Ready for e-commerce, SaaS, or portfolios.
+              Shop premium headphones, smart watches, and more. Get top quality
+              electronics with modern design, best deals, and fast delivery —
+              all in one place.
             </p>
 
             <div className="flex flex-wrap gap-3 pt-2">
               <a
-                href="#get-started"
+                href="#shop-now"
                 className="inline-flex items-center justify-center gap-2 rounded-2xl bg-purple-600 px-5 py-3 font-medium text-white shadow-lg shadow-purple-600/25 transition hover:bg-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-400/60"
               >
-                Get Started
+                Shop Now
                 <ArrowRight className="h-5 w-5" />
               </a>
               <a
