@@ -1,5 +1,5 @@
 import FeaturedSection from '@/components/UI/HomePage/FeaturedSection'
-import HeroSection from '../../Components/UI/HomePage/HeroSection/HeroSection'
+import HeroSection from '@/components/UI/HomePage/HeroSection/HeroSection'
 const Homepage = () => {
   return (
     <div>

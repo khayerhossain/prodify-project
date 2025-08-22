@@ -41,21 +41,11 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="my-10 w-[90%] mx-auto">
+    <div className="my-8 w-[40%] mx-auto">
       <h1 className="text-center text-4xl mb-5 font-bold">
         Login <span className="text-teal-500">Here</span>
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center">
-        {/* Illustration */}
-        <div>
-          <Image
-            src="https://img.freepik.com/free-vector/login-concept-illustration_114360-739.jpg"
-            width={500}
-            height={200}
-            alt="login page"
-            className="w-full h-auto"
-          />
-        </div>
+       
 
         {/* Login Form */}
         <div className="w-[80%] mx-auto bg-white p-6 shadow-lg rounded-lg">
@@ -112,7 +102,7 @@ const LoginPage = () => {
 
             {/* Register Link */}
             <p className="text-center text-gray-600">
-              Don't have an account?{" "}
+              Don,t have an account?{" "}
               <Link href="/register" className="text-teal-500 hover:underline">
                 Create an account
               </Link>
@@ -125,7 +115,7 @@ const LoginPage = () => {
             <button
               className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full shadow-md hover:bg-gray-200"
               onClick={() =>
-                signIn("google", { callbackUrl: "/dashboard" })
+                signIn("google", { callbackUrl: "/" })
               }
             >
               <Image
@@ -139,7 +129,7 @@ const LoginPage = () => {
             <button
               className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full shadow-md hover:bg-gray-200"
               onClick={() =>
-                signIn("github", { callbackUrl: "/dashboard" })
+                signIn("github", { callbackUrl: "/" })
               }
             >
               <Image
@@ -151,7 +141,6 @@ const LoginPage = () => {
             </button>
           </div>
         </div>
-      </div>
     </div>
   );
 };

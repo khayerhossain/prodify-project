@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import axios from "axios";
+import LoadingPage from "@/app/loading";
 
 type Product = {
   _id: string;
@@ -35,10 +36,10 @@ const ProductsPage = () => {
     fetchProducts();
   }, []);
 
-  if (loading) return <p className="text-center mt-20">Loading...</p>;
+  if (loading) return <LoadingPage />
 
   return (
-    <div className="max-w-7xl mx-auto py-10 px-4">
+    <div className="max-w-6xl mx-auto py-10 px-6">
       <h1 className="text-3xl font-bold mb-8">Products</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((product) => (

@@ -28,9 +28,8 @@ const ProductDetailsPage = () => {
             try {
                 const res = await axios.get(`/api/products/${id}`);
                 setProduct(res.data);
-                console.log("here all......", product);
             } catch (err) {
-                console.error("AxiosError:", err);
+                console.log(err)
             } finally {
                 setLoading(false);
             }
@@ -39,7 +38,8 @@ const ProductDetailsPage = () => {
         fetchProduct();
     }, [id]);
 
-    if (loading) return <LoadingPage/>;
+
+    if (loading) return <LoadingPage />;
     if (!product) return <p className="text-center mt-20 text-white">Product not found</p>;
 
     return (
@@ -55,7 +55,7 @@ const ProductDetailsPage = () => {
                             src={product.image}
                             alt={product.name}
                             width={350}
-                            height={240} 
+                            height={240}
                             className="rounded-lg object-cover w-full h-[240px]"
                         />
                     </div>
