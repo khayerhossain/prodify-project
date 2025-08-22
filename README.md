@@ -39,31 +39,21 @@ Follow these steps to run the project locally:
 git clone https://github.com/your-username/prodify.git
 2️⃣ Go to the project directory
 bash
-Copy
-Edit
 cd prodify
 3️⃣ Install dependencies
 bash
-Copy
-Edit
 npm install
 4️⃣ Set up environment variables
 Create a .env.local file in the root folder and add:
 
 env
-Copy
-Edit
 MONGODB_URI=your_mongodb_connection_string
 5️⃣ Run the development server
 bash
-Copy
-Edit
 npm run dev
 Now visit 👉 http://localhost:3000
 
 📦 Build for Production
 bash
-Copy
-Edit
 npm run build
 npm start
