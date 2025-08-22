@@ -30,6 +30,7 @@ Prodify is a simple and user-friendly Product Management Application where users
 
 ---
 📍 Route Summary
+
 Route	Type	Description
 /	Page	Home page (Product list)
 /add-product	Page	Form to add a new product
