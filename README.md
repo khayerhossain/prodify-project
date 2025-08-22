@@ -29,6 +29,11 @@ Prodify is a simple and user-friendly Product Management Application where users
 - Optimized for production with Vercel
 
 ---
+📍 Route Summary
+Route	Type	Description
+/	Page	Home page (Product list)
+/add-product	Page	Form to add a new product
+/api/products	API Route	Handles GET (list) & POST (create)
 
 ## 🖥️ Run Locally
 
